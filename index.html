@@ -20,9 +20,12 @@
                 font-style: oblique;
             }
             .paragraph_background{
+               
                 background: rgb(207,207,207);
+                margin-left:5%;
+		        margin-right:5%;
+		        text-align: center;
                 
-                padding-left:30%;
             }
             #container{
             width: 95%;
@@ -30,21 +33,35 @@
             border: 1px solid rgb(0,0,0);
             padding:15px;
             }
-        
+
+            #sidebar{
+		background: cyan;
+		border: 4px ridge red;
+		float:left;
+		width:7%;
+		margin:10px;
+		position:relative;
+		top: 50px;
+		padding: 5px;
+	    }
         </style>
     </head>
     <body>
-        
-        <h1>Elijah's blog</h1>
-
+        <div id="sidebar">
         <h3>Contents</h3>
         <ul>
             <li> <a href="#first-post">First post!</a></li>
             <li> <a href="#second-post">Second post</a></li>
             <li> <a href="#third-post"> Third post</a></li>
             <li> <a href="#fourth-post"> Fourth post</a></li>
+	    <li> <a href="#fifth-post"> Fifth post</a></li>
         </ul>
+        </div>
+
         
+	<div id="container">
+        <h1>Elijah's blog</h1>
+   
         <h2 id="first-post">First post</h2>
         <h6>6/22/2026</h6>
         
@@ -90,5 +107,6 @@
             but having to wait 15 business days for an update is kinda killing me. Might move this over to notepad for some immediate feedback.
         </p>
         </div>
+    </div>
     </body>
 </html>
